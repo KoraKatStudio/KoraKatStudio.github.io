@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KoraKat Studio</title>
+<style>
+  :root{
+    --gruen:#1e6b47; --gruen-dunkel:#144b31; --bg:#f3f8f5; --karte:#ffffff;
+    --text:#1b2620; --leise:#5b6b63; --rand:#cfe0d7;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#101714; --karte:#18211d; --text:#e6efe9; --leise:#9ab0a5; --rand:#2b3a33; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  header{ background:var(--gruen); color:#fff; padding:28px 16px 22px; }
+  header .innen{ max-width:720px; margin:0 auto; }
+  header a{ color:#fff; }
+  .marke{ font-size:13px; letter-spacing:.18em; text-transform:uppercase; opacity:.85; }
+  header h1{ margin:6px 0 0; font-size:26px; line-height:1.25; }
+  main{ max-width:720px; margin:0 auto; padding:22px 16px 60px; }
+  .karte{ background:var(--karte); border:1px solid var(--rand); border-radius:14px; padding:18px 18px 4px; }
+  h2{ font-size:19px; margin:28px 0 8px; }
+  h2:first-child{ margin-top:6px; }
+  h3{ font-size:16px; margin:22px 0 6px; }
+  p,ul{ margin:0 0 14px; }
+  ul{ padding-left:20px; }
+  a{ color:var(--gruen); }
+  @media (prefers-color-scheme: dark){ a{ color:#7fc7a1; } }
+  .adresse{ font-style:normal; line-height:1.7; }
+  .stand{ color:var(--leise); font-size:14px; }
+  .nav{ display:flex; flex-wrap:wrap; gap:10px; margin:16px 0 0; }
+  .nav a{
+    display:inline-block; padding:9px 15px; border-radius:999px;
+    background:rgba(255,255,255,.16); color:#fff; text-decoration:none; font-size:14px;
+  }
+  .trenn{ border:0; border-top:1px solid var(--rand); margin:34px 0 26px; }
+  footer{ max-width:720px; margin:0 auto; padding:0 16px 50px; color:var(--leise); font-size:14px; }
+  footer a{ color:var(--leise); }
+</style>
+</head>
+<body>
+<header><div class="innen">
+<div class="marke">KoraKat Studio</div>
+<h1>KoraKat Studio</h1>
+<nav class="nav"><a href="index.html" style="background:rgba(255,255,255,.34)">Start</a><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></nav>
+</div></header>
+<main>
+<div class="karte">
+<h2>Holy Needle!</h2>
+<p>Ein ruhiges Suchspiel f&uuml;r Android: irgendwo in einem Haufen aus Heu,
+Stroh, Bl&auml;ttern oder Federn liegt eine Nadel. Du r&auml;umst Halm f&uuml;r Halm ab,
+bis du sie findest.</p>
+<p>Keine Werbung. Keine Energie, keine Leben, keine Lootboxen, kein Abo.
+Das Spiel braucht kein Konto und sendet von sich aus nichts.</p>
+<h3>Rechtliches</h3>
+<ul>
+<li><a href="datenschutz.html">Datenschutzerkl&auml;rung</a> &middot; <a href="datenschutz.html#english">Privacy Policy (English)</a></li>
+<li><a href="impressum.html">Impressum</a></li>
+</ul>
+<h3>Kontakt</h3>
+<p><a href="mailto:korakat.studio@gmail.com">korakat.studio@gmail.com</a></p>
+</div>
+</main>
+<footer>KoraKat Studio &middot; Savas Baglar &middot; <a href="mailto:korakat.studio@gmail.com">korakat.studio@gmail.com</a></footer>
+</body>
+</html>
